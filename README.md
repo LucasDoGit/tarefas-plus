@@ -1,40 +1,111 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tarefas-plus
 
-## Getting Started
+<!-- 1405x425 -->
 
-First, run the development server:
+![Foto de Capa](./public/assets/capa-projeto.png)
+
+## Sumário
+
+- [\[Tarefas plus\]](#Tarefas-plus)
+  - [Sumário](#sumário)
+  - [Introdução](#introdução)
+  - [Tecnologias Usadas](#tecnologias-usadas)
+  - [Ambiente de desenvolvimento](#ambiente-de-desenvolvimento)
+  - [Informações Técnicas](#informações-técnicas)
+  - [Snapshots](#snapshots)
+  - [Como Executar o Projeto](#como-executar-o-projeto)
+  - [Contato](#contato)
+
+## Introdução
+
+Este é um projeto de um sistema de tarefas, com o diferencial de compartilhas suas tarefas com outras pessoas e que elas possam fazer comentários. O foco principal deste projeto é o uso da tecnologia Next.js e entender com funciona Client-Side Rendering (CSR), Server-Side Renderign (SSR) e Static Site Generation (SSG).
+
+## Tecnologias Usadas
+
+![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)&nbsp;
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)&nbsp;
+
+## Ambiente de desenvolvimento
+
+- Virtual Studio Code - Version 1.92.1
+- GitHub Desktop - Version 3.4.3
+- Node.js - Version 20.17.2
+
+## Informações técnicas
+
+- Utilizado Next.js;
+- Utilizado TypeScript;
+- Utilizado regras e padrões do Prettier;
+- Para criação das tarefas foi usado o [Firebase](https://firebase.google.com/?hl=pt);
+- Utilizado a biblioteca [NextAuth](https://next-auth.js.org) para sessão do usuário.
+
+## Snapshots
+
+### Tela Home
+
+**Obs**: Nesta tela foi utilzado o conceito de Static Site Generation (SSG) para informar a quantidade geral de posts e comentários a cada 60 segundos.
+
+<img src="./public/assets/screenshots/home.jpeg" alt="Tela home" width="500" />
+
+### Tela Login
+
+<img src="./public/assets/screenshots/login.jpeg" alt="Tela Login Google" width="500" />
+
+### Tela Terefas
+
+<img src="./public/assets/screenshots/tarefas.png" alt="Tela tarefas" width="500" />
+
+### Tela Comentários
+
+**Obs**: Nesta tela foi utilzado o conceito de Server-Side Renderign (SSR) para carregar as informações do post ao entrar página.
+
+<img src="./public/assets/screenshots/comentários.png" alt="Tela Home editando post" width="500" />
+
+## Como Executar o Projeto
+
+Para executar o projeto em uma ambiente de desenvolvimento siga as instruções:
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/LucasDoGit/tarefas-plus
+cd tarefas-plus
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Crie ou utilize um projeto no firebase com o **Firebase Database**, então copie o acesso ao seu firebase:
+
+<img src="./public/assets/screenshots/connection-firebase.png" alt="Chaves de acesso Firebase" width="500" />
+
+4. Crie e configure Chaves de API para autenticação com o Google, seguindo a biblioteca do [NextAuth](https://next-auth.js.org/getting-started/introduction)
+
+<img src="./public/assets/screenshots/chave-api-google.png" alt="Chaves de acesso Google" width="500" />
+
+5. Cole as chaves de acesso no arquivo **.env** localizado na raiz do projeto:
+
+<img src="./public/assets/screenshots/env-config.png" alt="Arquivo .env" width="500" />
+
+6. Configuração das variaveis **NEXTAUTH_URL** e **NEXT_PUBLIC_URL** variavem de acordo com o ambiente. Caso seja local a url deve ser utilizada "http://localhost:300" e caso seja em um deploy a url ser a do seu dominio, exemplo "https://tarefas-plus-sandy.vercel.app"
+
+<img src="./public/assets/screenshots/next-url.png">
+
+6. use o comando abaixo para iniciar o projeto e aguarde.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+7. Feito! O projeto deve ser iniciado e pode ser acessado usando um navegador.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Contato
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Para obter mais informações, entre em contato comigo em:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Email: lucas.saiz19@gmail.com
+- GitHub: https://github.com/LucasDoGit
