@@ -91,7 +91,7 @@ npm install
 
 <img src="./public/assets/screenshots/env-config.png" alt="Arquivo .env" width="500" />
 
-6. As configuração das variaveis **NEXTAUTH_URL** e **NEXT_PUBLIC_URL** dependem do ambiente que vai ser executado. Caso seja local a url deve ser utilizada "http://localhost:300" e caso seja em um deploy a url ser a do seu dominio, exemplo "https://tarefas-plus-sandy.vercel.app":
+6. As configuração das variaveis **NEXTAUTH_URL** e **NEXT_PUBLIC_URL** dependem do ambiente que vai ser executado. Caso seja local a url deve ser utilizada "http://localhost:3000" e caso seja em um deploy a url deve ser a do seu dominio, exemplo "https://tarefas-plus-sandy.vercel.app":
 
 <img src="./public/assets/screenshots/next-url.png">
 
